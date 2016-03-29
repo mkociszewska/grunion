@@ -1,0 +1,11 @@
+$susy: (
+        columns: 12,
+        container: 1120px,
+        global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+.body {
+  @include container;
+}

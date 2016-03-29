@@ -1,0 +1,17 @@
+nav {
+  @include container;
+  position: fixed;
+  top: 3em;
+  left: 4em;
+  width: 100%;
+  .menu {
+    @include span(12);
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .menu__list {
+    @include span(1);
+    display: inline-block;
+    text-align: center;
+  }
+}

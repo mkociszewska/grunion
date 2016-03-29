@@ -1,0 +1,29 @@
+.body__quote {
+  height: 3rem;
+  p {
+    margin-top: 1em;
+    color: blue;
+    text-align: center;
+    font-size: 8em;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.circle {
+  border: 3px solid blue;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  top: 19%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
