@@ -1,9 +1,10 @@
 <nav>
   <ul class="menu">
-    <li class="menu__list">News</li>
-    <li class="menu__list">Projects</li>
-    <li class="menu__list">About</li>
-    <li class="menu__list">Contact</li>
+    <li class="menu__list"><%= link_to 'News', root_path %></li>
+    <li class="menu__list"><%= link_to 'Projects', projects_path %></li>
+    <li class="menu__list"><%= link_to 'About', about_path %></li>
+    <li class="menu__list"><%= link_to 'Contact', contact_path %></li>
     <li class="menu__list"><%= link_to 'New article', new_article_path %></li>
+    <li class="menu__list"><%= link_to 'New Project', new_project_path %></li>
   </ul>
 </nav>
