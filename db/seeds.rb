@@ -34,6 +34,48 @@ I'm not going anywhere. They're going to execute her. Look, a few minutes ago yo
       },
 )
 
+Article.delete_all
+
+Article.create!(title: 'A New Hope',
+  text:
+    %{
+        Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+There she is. See-Threepio, do you copy? For the moment. Uh, we're in the main hangar across from the ship. We're right above you. Stand by. You came in that thing? You're braver that I thought. Nice! Come on! It's them! Blast them! Get back to the ship! Where are you going? Come back! He certainly has courage. What good will it do us if he gets himself killed? Come on! I think we took a wrong turn. There's no lock! That oughta hold it for a while. Quick, we've got to get across. Find the control that extends the bridge. Oh, I think I just blasted it. They're coming through! Here, hold this. Here they come! For luck!
+      },
+)
+
+Article.create!(title: 'A New Hope',
+  text:
+    %{
+        Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
+
+There she is. See-Threepio, do you copy? For the moment. Uh, we're in the main hangar across from the ship. We're right above you. Stand by. You came in that thing? You're braver that I thought. Nice! Come on! It's them! Blast them! Get back to the ship! Where are you going? Come back! He certainly has courage. What good will it do us if he gets himself killed? Come on! I think we took a wrong turn. There's no lock! That oughta hold it for a while. Quick, we've got to get across. Find the control that extends the bridge. Oh, I think I just blasted it. They're coming through! Here, hold this. Here they come! For luck!
+      },
+)
+
+Article.create!(title: 'The Empire Strikes Back',
+  text:
+    %{
+        You have learned much, young one. You'll find I'm full of surprises. Your destiny lies with me, Skywalker. Obi-Wan knew this to be true. No! All to easy. Perhaps you are not as strong as the Emperor thought. Impressive...most impressive. Obi-Wan has taught you well. You have controlled your fear... now release your anger. Only your hatred can destroy me.
+
+What do you want? Well, it's Princess Leia, sir. She's been trying to get you on the communicator. I turned it off. I don't want to talk to her. Oh. Well, Princess Leia is wondering about Master Luke. He hasn't come back yet. She doesn't know where he is. I don't know where he is. Nobody knows where he is. What do you mean, nobody knows? Well, uh, you see... Deck Officer. Deck Officer!
+      },
+)
+
+Article.create!(title: 'Return of the Jedi',
+  text:
+    %{
+        I can't do it, Artoo. I can't go on alone. Yoda will always be with you. Obi-Wan! Why didn't you tell me? You told me Vader betrayed and murdered my father. You father was seduced by the dark side of the Force. He ceased to be Anakin Skywalker and became Darth Vader. When that happened, the good man who was your father was destroyed. So what I have told you was true... from a certain point of view. A certain point of view! Luke, you're going to find that many of the truths we cling to depend greatly on our own point of view.
+
+Watch yourself, Wedge! Three from above! Red Three, Red Two, pull in! Got it! Three of them coming in, twenty degrees! Cut to the left! I'll take the leader! They're heading for the medical frigate. Pressure's steady. Only the fighters are attacking. I wonder what those Star Destroyers are waiting for. We're in attack position now, sir. Hold here. We're not going to attack? I have my orders from the Emperor himself. He has something special planned for them. We only need to keep them from escaping.
+
+Threepio, you tell that slimy piece of... worm-ridden filth he'll get no such pleasure from us. Right? Jabba! This is your last chance. Free us or die. Move him into position. Put him in.
+
+If they don't go for this, we're gonna have to get outta here pretty quick, Chewie. We have you on our screen now. Please identify. Shuttle Tydirium requesting deactivation of the deflector shield. Shuttle Tydirium, transmit the clearance code for shield passage. Transmission commencing. Now we find out if that code is worth the price we paid. It'll work. It'll work. Vader's on that ship. Now don't get jittery, Luke. There are a lot of command ships. Keep your distance though, Chewie, but don't look like you're trying to keep your distance. I don't know. Fly casual. I'm endangering the mission. I shouldn't have come. It's your imagination, kid. Come on. Let's keep a little optimism here.
+      },
+)
+
 # Project.create!(title: 'Moby-Duck',
 #   description:
 #     %{
