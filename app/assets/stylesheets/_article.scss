@@ -1,0 +1,36 @@
+article {
+	margin-bottom: 5em;
+}
+
+.body__article {
+	@include span(9 last);
+}
+
+.body__form {
+	@include span(9 last);
+    border: 4px solid blue;
+    padding: 1em;
+}
+
+.article__title {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	color: blue;
+	a {
+	text-decoration: none;
+	color: blue;
+	}
+}
+
+.article__text {
+	font-size: 85%;
+	line-height: 125%;
+	margin-bottom: 1em;
+}
+
+.button__edit, .button__back {
+	@include span(2 last);
+	@include font(Helvetica, 10px, blue, lowercase);
+	height: 50px;
+	margin-right: 1em;
+} 

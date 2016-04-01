@@ -1,0 +1,38 @@
+.form__title, .form__text {
+    border: 1px solid transparent;
+}
+
+.form__title {
+	margin-bottom: 3em;
+}
+
+.form__text {
+	height: 100vh;
+}
+
+.form__title__label, .form__text__label {
+	@include span(3);
+	text-align: right;
+	font-size: 70%;
+}
+
+.form__title__textarea, .form__text__textarea {
+	@include span(9 last);
+	border: 1px dashed blue;
+	resize: none;
+	padding: 1%;
+}
+
+.form__text__textarea{
+	height: 90%;
+}
+
+.button__submit {
+	@include span(2 last);
+	border: none;
+	padding: 7px 12px;
+	background-color: blue;
+	font: 700 13px/18px Helvetica, arial;
+	color: white;
+	-webkit-appearance: none;
+}
