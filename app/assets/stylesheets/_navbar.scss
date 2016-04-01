@@ -1,7 +1,7 @@
 nav {
   @include container;
   position: fixed;
-  top: 3em;
+  margin-top: 3em;
   left: 4em;
   width: 100%;
   .menu {
@@ -15,3 +15,4 @@ nav {
     text-align: center;
   }
 }
+

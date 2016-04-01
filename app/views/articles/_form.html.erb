@@ -14,18 +14,19 @@
     </div>
   <% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+  <div class="form">
+    <div class="form__title">
+      <%= f.label :title, class: "form__title__label" %>
+      <%= f.text_field :title, class: "form__title__textarea" %>
+    </div> 
 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+    <div class="form__text">
+      <%= f.label :text, class: "form__text__label" %>
+      <%= f.text_area :text, class: "form__text__textarea" %>
+    </div>
 
-  <p>
-    <%= f.submit %>
-  </p>
+    <%= f.submit 'save', :class => "button__submit" %>
+
+  </div> 
 
 <% end %>

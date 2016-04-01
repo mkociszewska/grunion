@@ -8,4 +8,12 @@ $susy: (
 
 .body {
   @include container;
+  top: 10em;
+  position: relative;
+}
+
+.body__container__about {
+	width: 100%;
+  	max-width: 1200px;
+  	margin: auto;
 }

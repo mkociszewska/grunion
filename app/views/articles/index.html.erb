@@ -1,21 +1,12 @@
-<h1>Wszystkie wpisy</h1>
-<%= link_to 'New article', new_article_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="3"></th>
-  </tr>
-
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="body">
+      <% @articles.each do |article| %>
+        <article class="body__article">
+          <h3 class="article__title"><%= link_to article.title, article_path(article) %></h3>
+          <p class="article__text"><%= article.text %></p>
+          <%= link_to 'Edit', edit_article_path(article) %>
+          <%= link_to 'Destroy', article_path(article),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %>
+        </article>
+      <% end %>
+</div>    
