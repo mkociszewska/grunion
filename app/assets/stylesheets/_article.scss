@@ -2,11 +2,11 @@ article {
 	margin-bottom: 5em;
 }
 
-.body__article {
+.container__article {
 	@include span(9 last);
 }
 
-.body__form {
+.container__form {
 	@include span(9 last);
     border: 4px solid blue;
     padding: 1em;
