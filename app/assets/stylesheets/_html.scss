@@ -1,5 +1,6 @@
 $susy: (
         columns: 12,
+        gutters: 0.25,
         container: 1120px,
         global-box-sizing: border-box
 );
@@ -12,8 +13,3 @@ $susy: (
   position: relative;
 }
 
-.container__about {
-	width: 100%;
-  	max-width: 1200px;
-  	margin: auto;
-}
