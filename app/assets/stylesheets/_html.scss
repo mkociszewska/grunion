@@ -1,19 +1,15 @@
 $susy: (
         columns: 12,
+        gutters: 0.25,
         container: 1120px,
         global-box-sizing: border-box
 );
 
 @include border-box-sizing;
 
-.body {
+.container {
   @include container;
   top: 10em;
   position: relative;
 }
 
-.body__container__about {
-	width: 100%;
-  	max-width: 1200px;
-  	margin: auto;
-}

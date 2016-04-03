@@ -1,29 +1,29 @@
-.form__title, .form__text {
+.form-title-wrap, .form-text-wrap {
     border: 1px solid transparent;
 }
 
-.form__title {
+.form-title-wrap {
 	margin-bottom: 3em;
 }
 
-.form__text {
+.form-text-wrap {
 	height: 100vh;
 }
 
-.form__title__label, .form__text__label {
+.form-add-title, .form-add-text {
 	@include span(3);
 	text-align: right;
 	font-size: 70%;
 }
 
-.form__title__textarea, .form__text__textarea {
+.form-add-title-textarea, .form-add-text-textarea {
 	@include span(9 last);
-	border: 1px dashed blue;
+	border: $textarea-dashed;
 	resize: none;
 	padding: 1%;
 }
 
-.form__text__textarea{
+.form-add-text-textarea{
 	height: 90%;
 }
 

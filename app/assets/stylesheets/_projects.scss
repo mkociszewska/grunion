@@ -1,0 +1,22 @@
+.project-wrapper {
+	@include span(9 last);
+    border: 4px solid blue;
+    padding: 1em;
+}
+
+.project {
+	width: span(4);
+	// @include gutter;
+	border: 1px solid red;
+	float: left;
+	padding: gutter;
+}
+
+.project-title {
+	text-transform: uppercase;
+    color: $blue;
+}
+
+.project-description {
+	@include font($font-stack, 12px, black, none);
+}
