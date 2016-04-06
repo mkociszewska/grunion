@@ -2,6 +2,10 @@
     border: 1px solid transparent;
 }
 
+.form-title {
+	@include font($font-stack,inherit, $blue, Uppercase);
+}
+
 .form-title-wrap {
 	margin-bottom: 3em;
 }
