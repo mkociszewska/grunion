@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   def index
-    @articles = Article.all
+    @articles = Article.order('created_at DESC')
   end
 
   def show
@@ -15,11 +15,13 @@ class ArticlesController < ApplicationController
   def edit
   end
 
+  # a logged person can add an article and update ANY existing one
+
   def create
     @article = Article.new(article_params)
+    @article.user_id = current_user.id
     #sprawdzić czy render nie upierdala wykonywania
     return render :new unless @article.save
-    #@user.article_id = @article.id
 
     redirect_to @article, notice: 'Article was successfully created.'
   end

@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   def index
-    @projects = Project.all
+    @projects = Project.order('created_at DESC')
   end
 
   def show
@@ -15,8 +15,11 @@ class ProjectsController < ApplicationController
   def edit
   end
 
+  # a logged person can add a project and update ANY existing one
+
   def create
     @project = Project.new(project_params)
+    @project.user_id = current_user.id
     return render :new unless @project.save
     redirect_to @project, notice: 'Project was successfully created.'
   end
