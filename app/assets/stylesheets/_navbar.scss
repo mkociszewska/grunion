@@ -4,6 +4,7 @@ nav {
   margin-top: 3em;
   left: 4em;
   width: 100%;
+  z-index: 1000;
   .menu {
     @include span(12);
     margin-top: 1em;
