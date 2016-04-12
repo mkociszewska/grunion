@@ -1,0 +1,27 @@
+html {
+  font-size: $font-size-base;
+}
+
+@media screen and (min-width: $screen-lg-min) {
+  html {
+    font-size: $font-size-lg-screen;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  html {
+    font-size: $font-size-xs-screen;
+  }
+}
+
+////@media screen and (min-width: $screen-xxl-min) and (-webkit-min-device-pixel-ratio: 2) {
+////  html {
+////    font-size: $font-size-xxl-screen;
+////  }
+////}
+
+body {
+  font-size: 1rem;
+  font-family: $font-stack;
+  letter-spacing: 0.05em;
+}
