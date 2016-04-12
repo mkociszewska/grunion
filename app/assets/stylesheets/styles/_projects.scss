@@ -3,6 +3,12 @@
 	padding: 1em;
 }
 
+.new-project-wrapper {
+	@include span(9 last);
+	padding: 1em;
+	border: 4px solid $blue;
+}
+
 .project {
 	width: span(4);
 	// @include gutter;
