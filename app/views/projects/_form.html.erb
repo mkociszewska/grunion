@@ -1,4 +1,4 @@
-<%= form_for @project do |f| %>
+<%= form_for @project, html: { multipart: true } do |f| %>
 
   <% if @project.errors.any? %>
     <div id="error_explanation">
@@ -25,9 +25,14 @@
     <%= f.text_area :description, class: "form-add-text-textarea" %>
   </div>
 
-    <%= f.submit 'save', :class => "button__submit"  %>
+  <div class="form-text-wrap">
+    <%= f.label :images, class: "form-add-image" %>
+    <%= f.file_field :images, multiple: true, class: "form-add-file-field"  %>
+  </div>
 
-</div>  
+  <%= f.submit 'save', :class => "button__submit"  %>
+
+</div>
 
 <% end %>
 

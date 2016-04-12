@@ -9,6 +9,12 @@
 	  <%= @project.description %>
 	</p>
 
+	<p>
+		<% @project.images.each do |image| %>
+			<%= image_tag(image.url) %>
+		<% end %>
+	</p>
+
 	<%= link_to 'Edit', edit_project_path(@project) %> |
 	<%= link_to 'Back', projects_path %>
 </div>
