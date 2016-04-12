@@ -1,0 +1,122 @@
+// backgrounds:
+.devise-background {
+  background: url('1.png') no-repeat center center;
+  background-size: contain;
+  @include blur(20px);
+  width: 50%;
+  left: 25%;
+  opacity: 0.8;
+}
+
+// general:
+.login-wrapper, .signup-wrapper, .devise-background, .password-forgot-wrapper {
+  height: 70vh;
+  position: absolute;
+}
+.login-wrapper, .signup-wrapper, .password-forgot-wrapper {
+  z-index: 100;
+  width: 30%;
+  left: 35%;
+  font-size: 0.8rem;
+}
+.devise-title {
+  margin-bottom: 1.5rem;
+  @include font($font-stack,inherit, $blue, Uppercase);
+}
+
+.login-email, .login-email-area, .login-password, .login-password-area,
+.signup-password-confirm, .signup-password-confirm-area,
+.forgot-email, .forgot-email-area {
+  display: block;
+}
+
+.login-email, .login-password,
+.signup-password-confirm,
+.forgot-email {
+  margin-bottom: 0.25rem;
+}
+
+
+//field areas:
+
+.login-email-area, .login-password-area,
+.signup-password-confirm-area,
+.forgot-email-area {
+  border: none;
+  border-bottom: 1px solid #00ff5d;
+  //@include span(2);
+  float: none;
+  height: 1.5rem;
+  background: transparent;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+//buttons:
+
+.button-login, .button-sign-up, .button-reset {
+  //@include span(2);
+  float: none;
+  border: none;
+  background-color: blue;
+  @include font($font-stack,inherit, #fff, Uppercase);
+  -webkit-appearance: none;
+  width: 60%;
+  padding: 6px 0;
+  letter-spacing: 0.1rem;
+  &:hover {
+    background-color: #f6ee15;
+    color: #111;
+  }
+  &.button-reset {
+    width: 100%;
+  }
+}
+
+.login-remember-wrap {
+
+}
+
+.remember-checkbox {
+
+}
+
+.remember-label {
+
+}
+
+// shared links:
+[class*="shared"] {
+  margin-top: 1rem;
+  color: darkviolet;
+}
+
+[class*="link-shared"] {
+  text-decoration: none;
+}
+.link-shared_login,
+.link-shared_signup,
+.link-shared_forgot {
+  color: darkviolet;
+}
+
+// notices, alerts:
+
+//TO FIX:
+.notice  {
+  position: absolute;
+  top: -50%;
+  color: cyan;
+  font-size: 2rem;
+  z-index: 100;
+  width: 50vw;
+}
+
+.alert {
+  position: absolute;
+  top: -20%;
+  color: orangered;
+  font-size: 2rem;
+  z-index: 100;
+  width: 50vw;
+}

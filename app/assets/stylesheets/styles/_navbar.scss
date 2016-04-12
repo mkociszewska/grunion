@@ -1,0 +1,47 @@
+nav {
+  @include container;
+  position: fixed;
+  margin-top: 3em;
+  left: 4em;
+  width: 100%;
+  z-index: 1000;
+  .menu {
+    @include span(12);
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .menu__list {
+    @include span(1);
+    display: inline-block;
+    text-align: center;
+    color: black;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      border: none;
+      border-top: 2px solid #111;
+    }
+    &:visited {
+      text-decoration: none;
+      color: #111;
+    }
+    &:focus {
+      text-decoration: none;
+      color: #111;
+    }
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    margin-top: 0em;
+    left: 0.5em;
+    width: 100%;
+    z-index: 1000;
+    line-height: 2.5rem;
+    .menu__list {
+      display: block;
+      float: none;
+    }
+  }
+}
+
+

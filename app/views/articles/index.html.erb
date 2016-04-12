@@ -1,5 +1,4 @@
-<div class="container">
-      <% @articles.each do |article| %>
+ <% @articles.each do |article| %>
         <article class="wrapper-article">
           <h3 class="article-title"><%= link_to article.title, article_path(article) %></h3>
           <p class="article-text"><%= article.text %></p>
@@ -8,5 +7,4 @@
                   method: :delete,
                   data: { confirm: 'Are you sure?' } %>
         </article>
-      <% end %>
-</div>    
+ <% end %>
