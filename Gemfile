@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'susy'
 gem 'devise'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'masonry-rails'
 
 group :development, :test do
   gem 'byebug'
