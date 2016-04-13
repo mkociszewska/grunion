@@ -9,11 +9,13 @@
 	  <%= @project.description %>
 	</p>
 
-	<p>
-		<% @project.images.each do |image| %>
-			<%= image_tag(image.url) %>
-		<% end %>
-	</p>
+	<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
+		<div class="box col10">
+			<% @project.images.each do |image| %>
+				<%= image_tag(image.url) %>
+			<% end %>
+		</div>
+	</div>
 
 	<%= link_to 'Edit', edit_project_path(@project) %> |
 	<%= link_to 'Back', projects_path %>
