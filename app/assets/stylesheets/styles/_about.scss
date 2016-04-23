@@ -1,26 +1,25 @@
-.container__about {
-  //width: 100%;
-  //max-width: 1120px;
-  //margin: auto;
-  //height: auto;
+.about-container {
+  margin-bottom: 8rem;
   p {
-    color: blue;
+    //color: blue;
     text-align: center;
     font-size: 8rem;
     letter-spacing: 0.1rem;
+    font-family: Times;
+    line-height: 1.3em
   }
 }
 
 .circle {
-  border: 3px solid blue;
+  border: 3px solid black;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   position: absolute;
   display: block;
   top: 0;
-  left: 36%;
-  transform: translate(-50%, -50%);
+  left: calc(50% - 150px);
+  transform: translate(50%, 50%);
   animation: pulse 1s infinite;
 }
 
@@ -28,4 +27,9 @@
   0% {transform: scale(1);}
   50% {transform: scale(1.1);}
   100% {transform: scale(1);}
+}
+
+.wrapper-about {
+  @include span(9 last);
+  line-height: 1.3em;
 }
