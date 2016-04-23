@@ -16,4 +16,5 @@
 !/log/.keep
 /tmp
 /notes.txt
-/.idea
+/.idea/
+/public/
