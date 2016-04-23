@@ -1,17 +1,23 @@
-<div id="masonry-container" class="project-wrapper transitions-enabled">
+<div class="project-wrapper">
+<div class="grid transitions-enabled">
+  <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
     <% @projects.each do |project| %>
-        <div class="project box col3">
-          <h3 class="project-title"><%= link_to project.title, project_path(project) %></h3>
-          <!-- <p class="project-description"><%= project.description %></p> -->
+        <div class="grid-item project">
           <%= link_to image_tag(project.images.sample), project_path(project) %>
+          <h3 class="project-title"><%= link_to project.title, project_path(project) %></h3>
           <% if user_signed_in? %>
-            <%= link_to 'Show', project_path(project) %>
-            <%= link_to 'Edit', edit_project_path(project) %>
+            <%= link_to 'Show', project_path(project), class: "project-show" %>
+            <%= link_to 'Edit', edit_project_path(project), class: "project-edit"  %>
             <%= link_to 'Destroy', project_path(project),
                       method: :delete,
-                      data: { confirm: 'Are you sure?' } %>
+                      data: { confirm: 'Are you sure?' }, class: "project-destroy"  %>
           <% end %>
         </div>
       <% end %>
-      </div>
+  </div>
 </div>
+
+<p class="fazed-grunion">Organized Fun</p>
+<span class="fazed-circle"></span>
+

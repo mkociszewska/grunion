@@ -5,23 +5,20 @@ article {
 }
 
 .wrapper-article {
-	@include span(9 last);
-}
-
-.form-wrapper {
-	@include span(9 last);
-    border: 4px solid blue;
-    padding: 1em;
+	@include span(7 last);
 }
 
 .article-title {
 	margin-bottom: 1em;
 	text-transform: uppercase;
-	color: blue;
-	a {
-	text-decoration: none;
-	color: blue;
-	}
+	color: white;
+	font-family: sans-serif;
+	font-weight: bolder;
+	text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+		a {
+		text-decoration: none;
+		color: white;
+		}
 }
 
 .article-text {
@@ -30,10 +27,4 @@ article {
 	margin-bottom: 1em;
 }
 
-.button__edit, .button__back {
-	@include span(2 last);
-	@include font(Helvetica, 10px, blue, lowercase);
-	height: 50px;
-	margin-right: 1em;
-} 
 

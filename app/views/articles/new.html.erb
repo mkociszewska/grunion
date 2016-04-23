@@ -1,5 +1,5 @@
-<div class="form-wrapper">
-		 <h1 class="form-title"> New article</h1>
-			<%= render 'form' %>
-			<span><%= link_to 'Back', articles_path, :class => "button__back"%></span>
+<div class="form-wrapper shadow-grey">
+  <h1 class="form-title">New article</h1>
+  <span class="back-project-button"><%= link_to '&larr; back'.html_safe, articles_path %></span>
+	<%= render 'form' %>
 </div>

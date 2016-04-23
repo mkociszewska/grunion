@@ -1,0 +1,24 @@
+.contact-wrapper {
+  @include span(9 last);
+}
+
+.contact {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+.contact-social {
+  @include span(7 last);
+}
+
+.fazed-mail {
+  animation: neon 1s infinite;
+}
+
+@keyframes neon {
+  0% {color: #111111;}
+  50% {color: $blue;}
+  100% {color: #111111;}
+}
+

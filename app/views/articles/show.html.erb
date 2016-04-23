@@ -1,8 +1,8 @@
-<div class="container__article">
+<article class="wrapper-article">
 
-	<h3 class="article__title"><%= @article.title %></h3>
-	<p class="article__text"><%= @article.text %></p>
+	<h3 class="article-title"><%= @article.title %></h3>
+	<p class="article-text"><%= @article.text %></p>
 
-	<%= link_to 'Edit', edit_article_path(@article) , :class => "button__edit" %> |
-	<%= link_to 'Back', articles_path , :class => "button__back" %>
-</div>
+	<%= link_to 'Edit', edit_article_path(@article) , :class => "button-edit" %>
+	<%= link_to 'Back', articles_path , :class => "button-back" %>
+</article>

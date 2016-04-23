@@ -1,27 +1,109 @@
 .project-wrapper {
-	@include span(9 last);
-	padding: 1em;
-}
-
-.new-project-wrapper {
-	@include span(9 last);
-	padding: 1em;
-	border: 4px solid $blue;
+	@include span(12);
 }
 
 .project {
-	width: span(4);
-	// @include gutter;
-	border: 1px solid red;
-	float: left;
-	padding: gutter;
+  a {
+    img {
+      filter: grayscale(100%);
+      &:hover {
+        filter: none;
+      }
+    }
+  }
 }
 
 .project-title {
-	text-transform: uppercase;
-    color: $blue;
+  text-align: left;
+  font-family: sans-serif;
+	a {
+      color: #111;
+      font-size: 1.5rem;
+      font-family: sans-serif;
+      font-weight: normal;
+        &:hover {
+          color: yellow;
+          transition: 0.3s;
+		}
+	}
 }
 
 .project-description {
 	@include font($font-stack, 12px, black, none);
+}
+
+.project-show, .project-edit, .project-destroy {
+	font-size: 0.6rem;
+	float: right;
+	margin-left: 3px;
+	margin-top: 3%;
+	color: $red;
+	&:hover {
+		color: $turquoise;
+		border-bottom: 1px solid $turquoise;
+	}
+}
+
+//----------------------------------show:
+
+.show-project-title {
+	@include span(3);
+	line-height: 1.3em;
+	letter-spacing: 1px;
+}
+
+.show-project-description {
+	@include span(8 last);
+	font-size: 2rem;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+}
+
+.project-img-container {
+  margin-left: span(2);
+  margin-right: span(2);
+  margin-bottom: 10%;
+  border: 1px solid red;
+}
+
+.show-controllers {
+	width: 20%;
+	position: relative;
+	top: 30px;
+	a {
+		text-decoration: none;
+		color: #111;
+		&:hover {
+			color: $turquoise;
+		}
+	}
+}
+
+
+//----------------------------------background:
+.fazed-grunion {
+  position: fixed;
+  top: 45vh;
+  height: 10vh;
+  width: 95vw;
+  text-align: center;
+  font-style: italic;
+  -webkit-font-smoothing: antialiased;
+  @include blur(2px);
+  @include font(sans-serif, 10vh, #111, Uppercase);
+  z-index: -1;
+}
+
+.fazed-circle {
+  border: 3px solid #111;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: fixed;
+  display: block;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+  animation: pulse 1s infinite;
+  @include blur(2px);
+  z-index: -1;
 }

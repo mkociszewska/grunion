@@ -3,7 +3,6 @@ $screen-xs-max: 767px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
-//$screen-xxl-min: ;
 
 //fonts:
 $font-size-base: 16px;
@@ -11,7 +10,11 @@ $font-size-xs-screen: 11px;
 $font-size-lg-screen: 16px;
 $font-size-xxl-screen: 16px * 1,25;
 $font-stack: Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-serif: Times New Roman, serif;
 
-
+//colors:
 $blue: #0000ff;
+$turquoise: #02FFC9;
+$red: #FF4F15;
+
 $textarea-dashed: 1px dashed blue;

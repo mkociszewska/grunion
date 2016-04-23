@@ -1,4 +1,5 @@
-<div class="form-wrapper">
-		<%= render 'form' %>
-		<%= link_to 'Back', articles_path %>
+<div class="form-wrapper shadow-grey">
+	<h1 class="form-title">Edit article</h1>
+	<span class="back-article-button"><%= link_to '&larr; back'.html_safe, articles_path %></span>
+	<%= render 'form' %>
 </div>
