@@ -2,7 +2,6 @@
   @include container;
   position: fixed;
   margin-top: 1em;
-  //left: 4em;
   width: 100%;
 
   @media screen and (max-width: $screen-xs-max) {
@@ -37,7 +36,6 @@
   margin-bottom: 1em;
 }
 .menu {
-  //margin-top: 1em;
   z-index: 100;
 }
 .admin-menu {
@@ -54,7 +52,6 @@
 
 .menu-item {
   @include span(2);
-  //font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0px 0px 15px rgba(255, 255, 0, 1);
   a {
