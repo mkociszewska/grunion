@@ -1,22 +1,17 @@
-<div class="container">
-	<p>
-	  <strong>Title:</strong>
-	  <%= @project.title %>
-	</p>
-
-	<p>
-	  <strong>Text:</strong>
-	  <%= @project.description %>
-	</p>
-
-	<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
-		<div class="box col10">
-			<% @project.images.each do |image| %>
+<div class="project-img-container">
+	<div>
+		<% @project.images.each do |image| %>
 				<%= image_tag(image.url) %>
-			<% end %>
-		</div>
+		<% end %>
 	</div>
+</div>
 
-	<%= link_to 'Edit', edit_project_path(@project) %> |
-	<%= link_to 'Back', projects_path %>
+<div>
+	<div class="show-project-title"><%= @project.title %></div>
+	<div class="show-project-description"><%= @project.description %></div>
+</div>
+
+<div class="show-controllers">
+  <%= link_to 'Edit', edit_project_path(@project) %>
+  <%= link_to 'Back', projects_path %>
 </div>

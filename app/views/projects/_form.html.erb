@@ -25,12 +25,14 @@
     <%= f.text_area :description, class: "form-add-text-textarea" %>
   </div>
 
-  <div class="form-text-wrap">
-    <%= f.label :images, class: "form-add-image" %>
-    <%= f.file_field :images, multiple: true, class: "form-add-file-field"  %>
+  <div class="form-image-wrap">
+    <%= f.label :images, 'images &rarr;'.html_safe, class: "form-add-image" %>
+    <%= f.file_field :images, multiple: true, :class  => "add-images-button"  %>
   </div>
 
-  <%= f.submit 'save', :class => "button__submit"  %>
+  <div class="form-submit-wrap">
+    <%= f.submit 'save', :class => "button__submit"  %>
+  </div>
 
 </div>
 

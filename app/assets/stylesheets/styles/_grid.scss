@@ -1,7 +1,9 @@
+//----------------------------susy setup:
+
 $susy: (
         columns: 12,
         gutters: 0.25,
-        container: 1120px,
+        container: 96vw,
         global-box-sizing: border-box
 );
 
@@ -11,5 +13,43 @@ $susy: (
   @include container;
   top: 10em;
   position: relative;
+  @media screen and (min-width: $screen-md-min) {
+    top: 6em;
+  }
+  @media screen and (min-device-width: 1600px) {
+    max-width: 1600px;
+  }
 }
 
+//----------------------------masonry setup:
+
+.grid-sizer,
+.grid-item {
+  width: 49%;
+  margin-bottom: 2%;
+  @media screen and (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.grid-item--width2 { width:  60%; }
+.grid-item--width3 { width:  90%; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  a {
+    text-decoration: none;
+    img {
+    width: 100%;
+  }
+ }
+}
