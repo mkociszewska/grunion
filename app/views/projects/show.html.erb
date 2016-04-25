@@ -1,17 +1,39 @@
-<div class="project-img-container">
-	<div>
-		<% @project.images.each do |image| %>
-				<%= image_tag(image.url) %>
-		<% end %>
-	</div>
+<div class="gallery-wrapper">
+  <div class="cycle-slideshow"
+       data-cycle-fx=scrollHorz
+       data-cycle-timeout="0"
+       data-cycle-center-horz=true
+       data-cycle-center-vert=true
+       data-cycle-prev="#prev"
+       data-cycle-next="#next">
+      <% @project.images.each do |image| %>
+        <%= image_tag(image.url, class: "project-img")  %>
+      <% end %>
+  </div>
+  <div id="next"></div>
+  <div id="prev"></div>
+  <div id="showCaption"></div>
 </div>
 
-<div>
+
+
+<div id="caption-wrapper">
 	<div class="show-project-title"><%= @project.title %></div>
 	<div class="show-project-description"><%= @project.description %></div>
+  <div class="show-controllers">
+    <%= link_to 'Edit', edit_project_path(@project) %>
+    <%= link_to 'Back', projects_path %>
+  </div>
 </div>
 
-<div class="show-controllers">
-  <%= link_to 'Edit', edit_project_path(@project) %>
-  <%= link_to 'Back', projects_path %>
-</div>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+        if(document.URL.indexOf("#")==-1){
+          url = document.URL+"#";
+          location = "#";
+
+          location.reload(true);
+        }
+      });
+</script>
