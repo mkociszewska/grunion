@@ -27,3 +27,20 @@ body {
   letter-spacing: 1px;
 }
 
+.shadow-grey {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.text-shadow-grey {
+  -webkit-text-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-text-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  text-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.text-shadow-yellow {
+  -webkit-text-shadow: 0px 0px 15px rgba(255, 255, 0, 1);
+  -moz-text-shadow: 0px 0px 15px rgba(255, 255, 0, 1);
+  text-shadow: 0px 0px 15px rgba(255, 255, 0, 1);
+}
