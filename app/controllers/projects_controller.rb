@@ -1,5 +1,8 @@
+# every logged user can add, edit and delete ANY existing project
+
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
   def index
     @projects = Project.order('created_at DESC')
@@ -14,8 +17,6 @@ class ProjectsController < ApplicationController
 
   def edit
   end
-
-  # a logged person can add a project and update ANY existing one
 
   def create
     @project = Project.new(project_params)

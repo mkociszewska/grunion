@@ -1,5 +1,8 @@
+# every logged user can add, edit and delete ANY existing article
+
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
   def index
     @articles = Article.order('created_at DESC')
