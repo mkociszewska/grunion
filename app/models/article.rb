@@ -2,7 +2,7 @@ class Article < ActiveRecord::Base
 
   belongs_to :user
 
-  validates :title, presence: true, length: {minimum: 3, maximum: 150}
-  validates :text, presence: true, length: {minimum: 5}
+  validates :title, length: 2..150
+  validates :text, length: {minimum: 2}
 
 end
