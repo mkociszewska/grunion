@@ -27,4 +27,21 @@ article {
 	margin-bottom: 1em;
 }
 
+.link-to-edit {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: $red;
+  &:hover {
+    color: #111;
+  }
+}
+
+.link-to-destroy {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: $red;
+  &:hover {
+    color: #111;
+  }
+}
 
