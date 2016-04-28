@@ -1,12 +1,11 @@
   <% @articles.each do |article| %>
     <article class="wrapper-article">
-      <h3 class="article-title"><%= article.title %></h3>
-      <p class="article-text"><%= article.created_at.strftime("%d-%m-%Y") %></p>
+      <h3 class="article-title"><%= article.title %><span class="article-text"><%= article.created_at.strftime("%d-%m-%Y") %></span></h3>
       <p class="article-text"><%= article.text %></p>
       <% if user_signed_in? %>
-        <%= link_to 'Edit', edit_article_path(article) %>
-        <%= link_to 'Destroy', article_path(article),
-                method: :delete,
+        <%= link_to 'Edit', edit_article_path(article), class:"link-to-edit" %>
+        <%= link_to 'Destroy', article_path(article),  class:"link-to-destroy",
+            method: :delete,
                 data: { confirm: 'Are you sure?' } %>
       <% end %>
     </article>
