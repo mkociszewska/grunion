@@ -20,10 +20,12 @@
 <div id="caption-wrapper">
 	<div class="show-project-title"><%= @project.title %></div>
 	<div class="show-project-description"><%= @project.description %></div>
-  <div class="show-controllers">
-    <%= link_to 'Edit', edit_project_path(@project) %>
-    <%= link_to 'Back', projects_path %>
-  </div>
+  <% if user_signed_in? %>
+    <div class="show-controllers">
+      <%= link_to 'Edit', edit_project_path(@project) %>
+      <%= link_to 'Back', projects_path %>
+    </div>
+  <% end %>
 </div>
 
 
