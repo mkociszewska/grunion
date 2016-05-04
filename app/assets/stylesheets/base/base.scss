@@ -2,13 +2,13 @@ html {
   font-size: $font-size-base;
 }
 
-@media screen and (min-width: $screen-lg-min) {
+@media screen and (min-width: $screen-lg) {
   html {
     font-size: $font-size-lg-screen;
   }
 }
 
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs) {
   html {
     font-size: $font-size-xs-screen;
   }
