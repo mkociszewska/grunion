@@ -1,5 +1,12 @@
 .contact-wrapper {
-  @include span(9 last);
+  @include span(11 last);
+  margin-right: 2rem;
+  margin-top: -8vh;
+  @media (min-width: $screen-md) {
+    @include span(9 last);
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 
 .contact {

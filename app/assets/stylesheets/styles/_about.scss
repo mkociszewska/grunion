@@ -16,11 +16,15 @@
 }
 
 .about-container {
-  margin-top: 5%;
+  margin-top: -12%;
   margin-bottom: 8rem;
+
+  @media (min-width: $screen-md) {
+    margin-top: 5%;
+  }
   p {
     text-align: center;
-    font-size: 16rem;
+    font-size: 6rem;
     letter-spacing: 0.1rem;
     line-height: 1.1em;
     font-family: serif;
@@ -36,13 +40,13 @@
 
 .circle {
   position: absolute;
-  border: 15px solid black;
+  border: 3px solid black;
   transform: translate(50%, 50%);
   animation: pulse 1s infinite;
-  width: 400px;
-  height: 400px;
-  top: calc(35vh - 200px);
-  left: calc(50% - 200px);
+  width: 300px;
+  height: 300px;
+  top: calc(25vh - 150px);
+  left: calc(50% - 150px);
   border-radius: 50%;
 
   @media (min-width: $screen-md) {
@@ -71,11 +75,17 @@
   @include span(9 last);
   line-height: 1.3em;
   p {
-    margin-top: 10em;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    margin-top: 3em;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media (min-width: $screen-md) {
+      margin-top: 10em;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 }
+
 
 
 .nav-arrow {
@@ -96,9 +106,15 @@
 }
 
 .about-wrapper-team {
-  margin-top: 8em;
+  margin-top: 3em;
   line-height: 5rem;
-  font-size: 3rem;
+  font-size: 2rem;
+  @media (min-width: $screen-md) {
+    margin-top: 8em;
+    line-height: 5rem;
+    font-size: 3rem;
+  }
+
   ul{
     margin-top: 8em;
     @media (min-width: $screen-md) {
