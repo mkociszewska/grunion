@@ -1,4 +1,4 @@
-.project-wrapper {
+  .project-wrapper {
 	@include span(12);
 }
 
@@ -56,9 +56,12 @@
 
 .project-img {
   max-width: 90vw;
-  min-height: 70vh;
+  min-height: 30vh;
   max-height: 70vh;
   margin-top: 3%;
+  @media (min-width: $screen-md) {
+    min-height: 70vh;
+  }
 }
 
 .cycle-slideshow {
@@ -67,25 +70,31 @@
 }
 
 #next {
-  height: 100%;
-  width: 45%;
-  display: inline-block;
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  cursor: url(arrow-right.cur), url(arrow-right.png), url(arrow-right.svg), pointer;
+  display: none;
+  @media (min-width: $screen-md) {
+    height: 100%;
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    cursor: url(arrow-right.cur), url(arrow-right.png), url(arrow-right.svg), pointer;
+  }
 }
 
 #prev {
-  height: 100%;
-  width: 45%;
-  display: inline-block;
-  position: absolute;
-  z-index: 100;
-  top: 0%;
-  left: 0;
-  cursor: url(arrow-left.cur), url(arrow-left.png), url(arrow-left.svg), pointer;
+  display: none;
+  @media (min-width: $screen-md) {
+    height: 100%;
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    top: 0%;
+    left: 0;
+    cursor: url(arrow-left.cur), url(arrow-left.png), url(arrow-left.svg), pointer;
+  }
 }
 
 #showCaption {
