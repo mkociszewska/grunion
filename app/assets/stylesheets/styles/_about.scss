@@ -1,37 +1,62 @@
 
 [class*="about-wrapper"] {
   border: 1px solid transparent;
-  height: 85vh;
+  height: 88vh;
   position: relative;
   margin-bottom: 10vh;
-  &.about-wrapper-desc, .about-wrapper-desc {
-    height: 100vh;
+  &.about-wrapper-desc, &.about-wrapper-team {
+    height: 97vh;
+  }
+  @media (min-width: $screen-md) {
+    height: 85vh;
+    &.about-wrapper-desc, &.about-wrapper-team {
+      height: 100vh;
+    }
   }
 }
 
 .about-container {
-  margin-top: 5%;
+  margin-top: -12%;
   margin-bottom: 8rem;
+
+  @media (min-width: $screen-md) {
+    margin-top: 5%;
+  }
   p {
     text-align: center;
-    font-size: 8rem;
+    font-size: 6rem;
     letter-spacing: 0.1rem;
-    font-family: Times;
-    line-height: 1.3em
+    line-height: 1.1em;
+    font-family: serif;
+
+    @media (min-width: $screen-md) {
+      text-align: center;
+      font-size: 8rem;
+      letter-spacing: 0.1rem;
+      line-height: 1.3em
+    }
   }
 }
 
 .circle {
-  border: 3px solid black;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
   position: absolute;
-  display: block;
-  top: calc(35vh - 150px);
-  left: calc(50% - 150px);
+  border: 3px solid black;
   transform: translate(50%, 50%);
   animation: pulse 1s infinite;
+  width: 300px;
+  height: 300px;
+  top: calc(25vh - 150px);
+  left: calc(50% - 150px);
+  border-radius: 50%;
+
+  @media (min-width: $screen-md) {
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+    display: block;
+    top: calc(35vh - 150px);
+    left: calc(50% - 150px);
+  }
 }
 
 @keyframes pulse {
@@ -50,19 +75,24 @@
   @include span(9 last);
   line-height: 1.3em;
   p {
-    margin-top: 10em;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    margin-top: 3em;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @media (min-width: $screen-md) {
+      margin-top: 10em;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 }
 
 
+
 .nav-arrow {
-  //border: 1px solid blue;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 15%;
+  height: 5%;
   font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -70,12 +100,28 @@
   padding-top: 3%;
   color: #111;
   cursor: url(arrow-down.png), url(arrow-down.svg), crosshair;
+  @media (min-width: $screen-md) {
+    height: 15%;
+  }
 }
 
 .about-wrapper-team {
+  margin-top: 3em;
+  line-height: 5rem;
+  font-size: 2rem;
+  @media (min-width: $screen-md) {
+    margin-top: 8em;
+    line-height: 5rem;
+    font-size: 3rem;
+  }
+
   ul{
-    margin-top: 10em;
-    line-height: 2rem;
+    margin-top: 8em;
+    @media (min-width: $screen-md) {
+      margin-top: 10em;
+      line-height: 2rem;
+      font-size: 1rem;
+    }
     li{
       text-align: center;
     }

@@ -14,10 +14,18 @@
   position: absolute;
 }
 .login-wrapper, .signup-wrapper, .password-forgot-wrapper {
-  z-index: 100;
-  width: 30%;
-  left: 40%;
-  font-size: 0.8rem;
+  margin-right: 2rem;
+  margin-top: 4vh;
+  left: 26%;
+
+  @media  (min-width: $screen-md) {
+    margin-top: 8vh;
+    margin-right: 3rem;
+    z-index: 100;
+    width: 30%;
+    left: 40%;
+    font-size: 0.8rem;
+  }
 }
 .devise-title {
   margin-bottom: 1.5rem;

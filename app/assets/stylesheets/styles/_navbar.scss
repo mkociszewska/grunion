@@ -1,19 +1,31 @@
+.mobile-menu {
+  background: url('psychedelic-01.svg');
+  background-repeat: no-repeat;
+  height: 4rem;
+  width: 7rem;
+  position: absolute;
+  top: 1em;
+}
+.cross-hide {
+  height: 4rem;
+  width: 7rem;
+  position: absolute;
+  top: 1em;
+}
+
 .main-nav, .admin-nav {
   @include container;
-  position: fixed;
-  margin-top: 1em;
   width: 100%;
-
-  @media screen and (max-width: $screen-xs-max) {
-    margin-top: 0em;
+   margin-top: 0em;
     left: 0.5em;
     width: 100%;
     z-index: 1000;
     line-height: 2.5rem;
-    .menu-item {
-      display: block;
-      float: none;
-    }
+  @media  (min-width: $screen-md) {
+    margin-top: 1em;
+    position: fixed;
+    left: 0;
+    line-height: 1;
   }
 }
 
@@ -32,28 +44,49 @@
 
 //ul:
 .menu, .admin-menu {
-  @include span(8);
-  margin-bottom: 1em;
+  @media  (min-width: $screen-md) {
+    @include span(8);
+    margin-bottom: 1em;
+  }
 }
 .menu {
   z-index: 100;
+  position: absolute;
+  top: 4rem;
+  @media  (min-width: $screen-md) {
+    position: inherit;
+    top: 1em;
+    float: left;
+  }
 }
 .admin-menu {
   margin-top: 3em;
 }
 
 //li:
-
 .menu-item, .admin-menu-item, .admin-login-item {
+  text-align: left;
   display: inline-block;
-  text-align: center;
   color: black;
+  @media  (min-width: $screen-md) {
+    text-align: center;
+  }
 }
 
 .menu-item {
   @include span(2);
   text-transform: uppercase;
   font-family: sans-serif;
+  display: block;
+  float: none;
+  color: black;
+
+  @media (min-width: $screen-md) {
+    text-align: center;
+      display: inline-block;
+      float: left;
+    }
+
   a {
     text-decoration: none;
     color: #111;

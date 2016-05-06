@@ -1,12 +1,32 @@
 //breakpoints:
-$screen-xs-max: 767px;
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1200px;
+// Extra small screen / phone
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
 
 //fonts:
 $font-size-base: 16px;
-$font-size-xs-screen: 11px;
+$font-size-xs-screen: 12px;
 $font-size-lg-screen: 16px;
 $font-size-xxl-screen: 16px * 1,25;
 $font-stack: Helvetica Neue, Helvetica, Arial, sans-serif;

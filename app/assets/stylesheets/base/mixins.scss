@@ -10,10 +10,6 @@
   @return $remSize * 1rem;
 }
 
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
 
 //webkits:
 @mixin border-radius($radius) {
