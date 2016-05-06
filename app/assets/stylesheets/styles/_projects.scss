@@ -1,16 +1,15 @@
-  .project-wrapper {
-	@include span(12);
+.project-wrapper {
+  @include span(12);
 }
 
-.project {
-  a {
-    img {
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      &:hover {
-        filter: none;
-        -webkit-filter: none;
-      }
+
+.project-thumb {
+  img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    &:hover {
+      filter: none;
+      -webkit-filter: none;
     }
   }
 }
@@ -31,22 +30,22 @@
 }
 
 .project-description {
-	@include font($font-stack, 12px, black, none);
+  @include font($font-stack, 12px, black, none);
 }
 
 .project-show, .project-edit, .project-destroy {
-	font-size: 0.6rem;
-	float: right;
-	margin-left: 3px;
-	margin-top: 3%;
-	color: $red;
-	&:hover {
-		color: $turquoise;
-		border-bottom: 1px solid $turquoise;
-	}
+  font-size: 0.6rem;
+  float: right;
+  margin-left: 3px;
+  margin-top: 3%;
+  color: $red;
+  &:hover {
+    color: $turquoise;
+    border-bottom: 1px solid $turquoise;
+  }
 }
 
-//----------------------------------show:
+//----------------------------------show----------------------------------:
 
 .gallery-wrapper {
   height: 90vh;
@@ -114,41 +113,33 @@
 }
 
 .show-project-title {
-	@include span(3);
-	line-height: 1.3em;
-	letter-spacing: 1px;
+  @include span(3);
+  line-height: 1.3em;
+  letter-spacing: 1px;
 }
 
 .show-project-description {
-	@include span(8 last);
-	font-size: 2rem;
-	line-height: 1.3em;
-	letter-spacing: 1px;
+  @include span(8 last);
+  font-size: 2rem;
+  line-height: 1.3em;
+  letter-spacing: 1px;
 }
-
-//.project-img-container {
-//  margin-left: span(2);
-//  margin-right: span(2);
-//  margin-bottom: 10%;
-//  border: 1px solid red;
-//}
-
 
 .show-controllers {
-	width: 20%;
-	position: relative;
-	top: 30px;
-	a {
-		text-decoration: none;
-		color: #111;
-		&:hover {
-			color: $turquoise;
-		}
-	}
+  width: 20%;
+  position: relative;
+  top: 30px;
+  a {
+    text-decoration: none;
+    color: #111;
+    &:hover {
+      color: $turquoise;
+    }
+  }
 }
 
 
-//----------------------------------background:
+//----------------------------------background----------------------------------:
 .fazed-grunion {
   position: fixed;
   top: 45vh;
